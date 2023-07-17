@@ -4,11 +4,12 @@ import PlayScreen from './scripts/stage/play.js';
 import PlayerEntity from './scripts/renderables/player.js';
 import DataManifest from './manifest.js';
 
+import "./index.scss"
 
 device.onReady(() => {
 
     // initialize the display canvas once the device/browser is ready
-    if (!video.init(1218, 562, {parent : "screen", scale : "auto"})) {
+    if (!video.init(640, 480, {parent : "screen", scale : "auto"})) {
         alert("Your browser does not support HTML5 canvas.");
         return;
     }
